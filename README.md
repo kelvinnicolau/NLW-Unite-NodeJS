@@ -29,6 +29,28 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 
 - [x] O check-in no evento será realizado através de um QRCode;
 
+## Anotações
+
+Métodos HTTP: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, ...
+
+Corpo da requisição (Request Body)
+Parametros de busca (Search Params / Query Params) 'http://localhost:3333/users?name=Kelvin'
+Parametros de rota (Route Params) -> Identificação de recursos 'DELETE http://localhost:3333/users/5'
+Cabeçalhos (Headers) -> Contexto
+
+Semanticas = Significado
+
+Driver nativo / Query Builders / ORMs
+
+Object Relational Mapping (Hibernate / Doctrine / ActiveRecord)
+
+JSON - JavaScript Object Notation
+
+200 => sucesso
+300 => Redirecionamento
+400 => Erro do Cliente (Erro em alguma informação enviada por QUEM está fazendo a chamada p/ API)
+500 => Erro do Servidor (Um erro que está acontecendo INDEPENDENTE do que está sendo enviado p/ o servidor)
+
 ## Documentação da API (Swagger)
 
 Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com/docs
