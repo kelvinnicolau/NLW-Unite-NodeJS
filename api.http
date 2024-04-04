@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "NLW Unite Summit",
-    "details": "Um evento para quem é apaixonado por programação",
-    "maximumAttendees": 100
+    "title": "Novo Evento 3",
+    "details": null,
+    "maximumAttendees": 10
 }
+
+###
+
+POST http://localhost:3333/events/acb6c6ab-f4fc-4e96-9664-92ae268f76b7/attendees
+Content-Type: application/json
+
+{
+    "name": "Kelvin Nicolau",
+    "email": "kelvinnicolau7@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/acb6c6ab-f4fc-4e96-9664-92ae268f76b7
+
+###
+
+GET http://localhost:3333/attendees/1/badge
