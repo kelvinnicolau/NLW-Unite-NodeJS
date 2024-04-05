@@ -2,14 +2,14 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Novo Evento 3",
+    "title": "Novo Evento 4",
     "details": null,
-    "maximumAttendees": 10
+    "maximumAttendees": 122
 }
 
 ###
 
-POST http://localhost:3333/events/acb6c6ab-f4fc-4e96-9664-92ae268f76b7/attendees
+POST http://localhost:3333/events/217a2695-0e5b-4c47-83cc-f60863ec8d08/attendees
 Content-Type: application/json
 
 {
@@ -19,8 +19,19 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/events/acb6c6ab-f4fc-4e96-9664-92ae268f76b7
+GET http://localhost:3333/events/217a2695-0e5b-4c47-83cc-f60863ec8d08
 
 ###
 
 GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/1/check-in
+
+###
+
+GET http://localhost:3333/events/217a2695-0e5b-4c47-83cc-f60863ec8d08/attendees?query=kelvin
+
+###
+ 
